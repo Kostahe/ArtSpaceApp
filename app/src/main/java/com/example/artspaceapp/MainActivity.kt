@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -94,7 +95,7 @@ fun ArtSpaceApp(modifier: Modifier = Modifier.fillMaxSize()) {
         modifier = Modifier.padding(bottom = 20.dp)
     ) {
         Button(
-            onClick = { pageCounter -- },
+            onClick = { if(pageCounter > 1 ) pageCounter -- },
             modifier = Modifier
                 .weight(1f)
                 .padding(20.dp)
@@ -102,7 +103,7 @@ fun ArtSpaceApp(modifier: Modifier = Modifier.fillMaxSize()) {
             Text(text = stringResource(id = R.string.previous))
         }
         Button(
-            onClick = { pageCounter ++ },
+            onClick = { if(pageCounter < 4)pageCounter ++ },
             modifier = Modifier
                 .weight(1f)
                 .padding(20.dp)
@@ -135,11 +136,10 @@ fun ArtImageTitleAndButtons(
                 .height(300.dp)
                 .width(350.dp)
                 .shadow(elevation = 4.dp, shape = RectangleShape)
-                .padding(20.dp))
-        Card() {
+                )
+        Card(modifier = Modifier.fillMaxWidth().padding(start = 25.dp, end = 25.dp)) {
             Text(
                 text = stringResource(id = titleStringResourceId),
-                textAlign = TextAlign.Center,
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Light,
             )
