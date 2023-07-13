@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Art Space App</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="monday_left_me_broken">Monday left me broken</string>
+    <string name="avicii">Avicii</string>
+    <string name="Year_release_monday_left_me_broken">2015</string>
+    <string name="the_persistence_of_memory">The Persistence of Memory</string>
+    <string name="Year_release_the_persistence_of_memory">1931</string>
+    <string name="salvador_dal">Salvador Dalí</string>
+    <string name="maman">Maman</string>
+    <string name="louise_josephine">Louise Joséphine</string>
+    <string name="Year_relealse_maman">1999</string>
+    <string name="rabbit">Rabbit</string>
+    <string name="jeff_koons">Jeff Koons</string>
+    <string name="Year_release_rabit">1986</string>
+</resources>
